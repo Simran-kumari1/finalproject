@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FurEver | Pet Adoption</title>
+
+    <link rel="stylesheet" href="pets.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">🐾 FurEver</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#pets">Browse Pets</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <div class="hero-pets">
+
+    <div class="pet-image-main">
+        <img src="images.jpg" alt="Cute dog">
+    </div>
+
+    <div class="floating-pet dog">
+        🐶
+    </div>
+
+    <div class="floating-pet paw">
+        🐾
+    </div>
+
+</div>
+
+            <p class="tagline">🐾 FIND A FRIEND • GIVE THEM A HOME</p>
+
+            <h1>
+                Find Your
+                <span>Perfect Companion</span>
+            </h1>
+
+            <p>
+                Meet loving dogs, cats, birds and rabbits
+                waiting for their forever home.
+            </p>
+
+            <a href="#pets" class="hero-btn">
+                Browse Pets ❤️
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- PET SECTION -->
+    <section class="pets-section" id="pets">
+
+        <div class="section-heading">
+
+            <p>MEET OUR PETS</p>
+
+            <h2>Find Your New Best Friend</h2>
+
+        </div>
+
+
+        <!-- FILTERS -->
+        <div class="filters">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔍 Search by name or breed"
+            >
+
+            <select id="typeFilter">
+
+                <option value="all">All Types</option>
+                <option value="Dog">Dogs</option>
+                <option value="Cat">Cats</option>
+                <option value="Bird">Birds</option>
+                <option value="Rabbit">Rabbits</option>
+
+            </select>
+
+
+            <select id="ageFilter">
+
+                <option value="all">All Ages</option>
+                <option value="Baby">Baby</option>
+                <option value="Young">Young</option>
+                <option value="Adult">Adult</option>
+                <option value="Senior">Senior</option>
+
+            </select>
+
+
+            <button id="clearBtn">
+                Clear
+            </button>
+
+        </div>
+
+
+        <!-- LOADING -->
+        <div id="loading">
+            <div class="loader"></div>
+            <p>Loading adorable pets...</p>
+        </div>
+
+
+        <!-- PET CARDS -->
+        <div id="petGrid" class="pet-grid"></div>
+
+
+        <div id="noPets" class="no-pets">
+            😿 No pets found.
+        </div>
+
+    </section>
+
+
+    <!--PROFILE MODAL -->
+    <div id="petModal" class="modal">
+
+        <div class="modal-content">
+
+            <button id="closeModal" class="close-btn">
+                ×
+            </button>
+
+
+            <img
+                id="modalImage"
+                src=""
+                alt="Pet"
+            >
+
+
+            <div class="modal-info">
+
+                <p class="modal-type" id="modalType"></p>
+
+                <h2 id="modalName"></h2>
+
+                <p id="modalBreed"></p>
+
+
+                <div class="pet-details">
+
+                    <span id="modalAge"></span>
+
+                    <span id="modalGender"></span>
+
+                </div>
+
+
+                <h3>About Me</h3>
+
+                <p id="modalDescription"></p>
+
+
+                <button
+                    id="adoptBtn"
+                    class="adopt-btn"
+                >
+                    I'm Interested in Adopting🥺
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ADOPTION FORM -->
+    <section class="adoption-section" id="adoption">
+
+        <div class="form-container">
+
+            <p class="form-tag">
+                START YOUR ADOPTION JOURNEY
+            </p>
+
+            <h2>Adoption Interest Form</h2>
+
+            <p class="form-description">
+                Fill out this form and tell us about
+                your interest in adopting a pet.
+            </p>
+
+
+            <form id="adoptionForm">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter phone number"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="selectedPet">
+                            Pet You Want To Adopt
+                        </label>
+
+                        <input
+                            type="text"
+                            id="selectedPet"
+                            placeholder="Select a pet above"
+                            readonly
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="reason">
+                        Why do you want to adopt?
+                    </label>
+
+                    <textarea
+                        id="reason"
+                        rows="5"
+                        placeholder="Tell us why you would like to adopt..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="submit-btn"
+                >
+                    Submit Adoption Interest ❤️
+                </button>
+
+            </form>
+
+
+            <div
+                id="successMessage"
+                class="success-message"
+            >
+                🎉 Thank you! Your adoption interest
+                has been submitted successfully.
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <p class="tagline">ABOUT US</p>
+
+        <h2>Every Pet Deserves A Loving Home 🐾</h2>
+
+        <p>
+            FurEver is a pet adoption portal that helps
+            people discover pets looking for loving families.
+            Browse pets, learn about them and submit your
+            adoption interest.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>🐾 FurEver</h3>
+
+        <p>
+            © 2026 FurEver Pet Adoption Portal
+        </p>
+
+    </footer>
+
+
+    <script src="pets1.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Bruno",
+        "type": "Dog",
+        "breed": "Labrador",
+        "age": "Young",
+        "gender": "Male",
+        "image": "bruno.jpg",
+        "description": "Bruno is a friendly and playful Labrador who loves running, playing and spending time with people."
+    },
+    {
+        "id": 2,
+        "name": "Max",
+        "type": "Dog",
+        "breed": "Golden Retriever",
+        "age": "Adult",
+        "gender": "Male",
+        "image": "max.jpg",
+        "description": "Max is a gentle Golden Retriever who enjoys walks and is very friendly with families."
+    },
+    {
+        "id": 3,
+        "name": "Luna",
+        "type": "Cat",
+        "breed": "Persian",
+        "age": "Young",
+        "gender": "Female",
+        "image": "lunaa.jpeg",
+        "description": "Luna is a calm Persian cat who loves quiet places, cuddles and relaxing with her family."
+    },
+    {
+        "id": 4,
+        "name": "Milo",
+        "type": "Cat",
+        "breed": "Domestic Shorthair",
+        "age": "Adult",
+        "gender": "Male",
+        "image": "milo.jpg",
+        "description": "Milo is an affectionate and playful cat looking for a warm and loving home."
+    },
+    {
+        "id": 5,
+        "name": "Rio",
+        "type": "Bird",
+        "breed": "Parrot",
+        "age": "Young",
+        "gender": "Male",
+        "image": "rio.jpeg",
+        "description": "Rio is an energetic and colourful parrot who loves attention and interaction."
+    },
+    {
+        "id": 6,
+        "name": "Kiwi",
+        "type": "Bird",
+        "breed": "Lovebird",
+        "age": "Baby",
+        "gender": "Female",
+        "image": "kiwi.jpeg",
+        "description": "Kiwi is a tiny and cheerful Lovebird who enjoys being around people."
+    },
+    {
+        "id": 7,
+        "name": "Coco",
+        "type": "Rabbit",
+        "breed": "Holland Lop",
+        "age": "Baby",
+        "gender": "Female",
+        "image": "coco.jpg",
+        "description": "Coco is a cute and gentle rabbit who loves fresh vegetables and a safe environment."
+    },
+    {
+        "id": 8,
+        "name": "Snowy",
+        "type": "Rabbit",
+        "breed": "Angora",
+        "age": "Young",
+        "gender": "Male",
+        "image": "snowy.jpg",
+        "description": "Snowy is a soft and calm Angora rabbit looking for a caring forever home."
+    }
+]
