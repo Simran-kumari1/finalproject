@@ -9,7 +9,7 @@ async function loadPets() {
 
     try {
 
-        const response = await fetch("pets.json");
+        const response = await fetch("products.json");
 
         if (!response.ok) {
             throw new Error("pets.json not found");
